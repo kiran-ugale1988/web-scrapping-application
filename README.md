@@ -1,8 +1,4 @@
-## Magpie PHP Developer Challenge
-
-Your task is to gather data about the products listed on https://www.magpiehq.com/developer-challenge/smartphones
-
-The final output of your script should be an array of objects similar to the example below:
+The final output of the script should be an array of objects similar to the example below:
 
 ```
 {
@@ -19,9 +15,6 @@ The final output of your script should be an array of objects similar to the exa
 
 ```
 
-I used repository as a starter template.
-
-I shared `output.json` over email
 
 ### Notes
 * Unique products condition handled.
@@ -39,9 +32,8 @@ I shared `output.json` over email
 ### Setup
 
 ```
-extract the zip file i.e. magpie-developer-challenge.zip
-cd magpie-developer-challenge
+git clone
+cd web-scrapping-application
 composer install
 ```
-
 To run the scrape you can use `php src/Scrape.php`
