@@ -40,11 +40,7 @@ To run the scrape you can use `php src/Scrape.php`
 
 ###Additionally added rector for code refactoring
 ###Rector link https://getrector.com/documentation
-To install fresh:
-    composer require rector/rector --dev
-First Time Run:
-     vendor/bin/rector
-To see preview of suggested changed, run process command with --dry-run option:
-    vendor/bin/rector process --dry-run
-To make changes happen, run bare command:
-    vendor/bin/rector process
+* To install fresh: composer require rector/rector --dev
+* First Time Run: vendor/bin/rector
+* To see preview of suggested changed, run process command with --dry-run option: vendor/bin/rector process --dry-run
+* To make changes happen, run bare command: vendor/bin/rector process
