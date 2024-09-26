@@ -44,3 +44,12 @@ To run the scrape you can use `php src/Scrape.php`
 * First Time Run: vendor/bin/rector
 * To see preview of suggested changed, run process command with --dry-run option: vendor/bin/rector process --dry-run
 * To make changes happen, run bare command: vendor/bin/rector process
+
+
+### Contributing
+* Fork it on GitHub!
+* Clone the fork to your own machine.
+* Checkout your feature branch: git checkout -b my-awesome-feature
+* Commit your changes to your own branch: git commit -am 'Add some feature'
+* Push your work back up to your fork: git push -u origin my-awesome-feature
+* Submit a Pull Request so that I can review your changes.
