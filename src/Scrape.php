@@ -10,8 +10,8 @@ class Scrape
 
     public function run(): void
     {
-        $scrapeUrl = 'https://www.magpiehq.com/developer-challenge/smartphones';
-        $baseImageUrl = 'https://www.magpiehq.com/developer-challenge/';
+        $scrapeUrl = 'add your scrape web url here';
+        $baseImageUrl = 'add your base image url to store full image url';
 
         $document = ScrapeHelper::fetchDocument($scrapeUrl);
 
