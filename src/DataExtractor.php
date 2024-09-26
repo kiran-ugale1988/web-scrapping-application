@@ -31,8 +31,6 @@ class DataExtractor
 
     /**
      * Extracts all relevant product information and returns a Product object.
-     *
-     * @return Product
      */
     public function extractProduct(): Product
     {
@@ -104,7 +102,7 @@ class DataExtractor
     private function extractColours(): array
     {
         $colours = [];
-        $this->node->filter('[data-colour]')->each(function (Crawler $colourNode) use (&$colours) {
+        $this->node->filter('[data-colour]')->each(function (Crawler $colourNode) use (&$colours): void {
             $colours[] = $colourNode->attr('data-colour');
         });
         return $colours;

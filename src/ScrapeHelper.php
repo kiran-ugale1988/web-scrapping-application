@@ -33,11 +33,11 @@ class ScrapeHelper
     {
         $crawler = self::fetchDocument($pageUrl);
         // Extract product data
-        $crawler->filter('.product')->each(function (Crawler $node) use (&$products, $baseImageUrl) {
+        $crawler->filter('.product')->each(function (Crawler $node) use (&$products, $baseImageUrl): void {
             $extractor = new DataExtractor($node, $baseImageUrl);
             $baseProduct = $extractor->extractProduct();
             // Extract color variants
-            $node->filter('[data-colour]')->each(function (Crawler $colourNode) use (&$products, $baseProduct) {
+            $node->filter('[data-colour]')->each(function (Crawler $colourNode) use (&$products, $baseProduct): void {
                 $colour = $colourNode->attr('data-colour'); // Get the color variant
                 // Create a new product for each color variant
                 $variantProduct = new Product(
