@@ -56,7 +56,7 @@ To run the scrape you can use `php src/Scrape.php`
 
 ### OutPut
 To run the scrape you can use `php src/Scrape.php`
-
+```json
 [
   {
     "title": "iPhone 11 Pro 64GB",
@@ -279,3 +279,4 @@ To run the scrape you can use `php src/Scrape.php`
     "shippingDate": "2024-09-26"
   }
 ] 
+```
